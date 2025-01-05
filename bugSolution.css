@@ -1,0 +1,18 @@
+The solution involves a more robust approach to applying the transition property, ensuring broader compatibility across different browsers. Vendor prefixes are included to handle older or less compliant browser versions.
+
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+  /* Vendor prefixes for broader compatibility */
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #007bff;
+}
+```
