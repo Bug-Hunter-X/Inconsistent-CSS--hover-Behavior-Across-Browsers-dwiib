@@ -1,0 +1,14 @@
+The following CSS code snippet demonstrates an issue where the expected behavior of the `:hover` pseudo-class is not consistent across different browsers.  The background color change on hover should smoothly transition, but in some browsers, it might appear abruptly or not at all.
+
+```css
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #007bff;
+}
+```
